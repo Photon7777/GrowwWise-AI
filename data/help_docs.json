@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sip_payment_failure",
+    "title": "SIP payment failed",
+    "category": "SIP",
+    "content": "If an SIP payment fails, first check whether the bank mandate, UPI autopay, or net banking authorization is active. A failed SIP may show as pending for a short period while the payment gateway confirms the final status. If money was not debited, the SIP installment is usually marked failed and the next scheduled installment continues normally. If money was debited but the SIP is not confirmed, wait for bank reconciliation and keep the bank reference number ready. Escalate to support when money is debited but the SIP remains failed or pending."
+  },
+  {
+    "id": "money_debited_not_confirmed",
+    "title": "Money debited but investment not confirmed",
+    "category": "Payments",
+    "content": "When money is debited but an investment is not confirmed, the transaction may still be awaiting confirmation from the bank, payment gateway, exchange, or mutual fund registrar. Most payment mismatches are reconciled automatically. Users should avoid making repeated payments for the same transaction until the final status is clear. Keep the UTR, bank reference number, transaction time, and amount ready. This issue should be escalated to a human support agent because it involves money movement."
+  },
+  {
+    "id": "mutual_fund_redemption_timeline",
+    "title": "Mutual fund redemption timeline",
+    "category": "Mutual Funds",
+    "content": "Mutual fund redemption timelines depend on the fund category, cut-off time, market holidays, and registrar processing. Liquid funds are often processed faster than equity funds. Equity mutual fund redemption proceeds commonly take a few business days after order processing, while debt funds can vary by scheme. If a redemption is placed after the cut-off time, it may be processed on the next business day. Bank holidays and weekends can delay credit."
+  },
+  {
+    "id": "kyc_rejection",
+    "title": "KYC rejected",
+    "category": "KYC",
+    "content": "KYC may be rejected if PAN details do not match official records, the uploaded document is unclear, the selfie or video verification fails, the address proof is invalid, or required fields are incomplete. Users should recheck PAN, date of birth, name spelling, address details, and document clarity before resubmitting. Repeated KYC rejection should be escalated to human support because identity verification is compliance-sensitive."
+  },
+  {
+    "id": "stock_order_pending",
+    "title": "Stock order still pending",
+    "category": "Orders",
+    "content": "A stock order can remain pending when the market is closed, the order price has not matched, liquidity is low, the order is outside circuit limits, or the exchange has not confirmed execution. Limit orders execute only when the market reaches the specified price and enough quantity is available. Market, limit, and stop-loss orders can have different pending states. Order execution issues should be escalated when the user sees inconsistent order status, funds or shares are blocked unexpectedly, or the user reports an exchange-related discrepancy."
+  },
+  {
+    "id": "ipo_application_status",
+    "title": "IPO application status",
+    "category": "IPO",
+    "content": "IPO application status may show pending until the UPI mandate is approved and the exchange or registrar confirms the bid. Users should approve the UPI mandate before the deadline and make sure the bank account has sufficient balance. Allotment status is normally available after the registrar finalizes allotment. If money is blocked but the IPO application does not appear correctly, users should keep the UPI mandate reference and application details ready for support."
+  },
+  {
+    "id": "etf_vs_mutual_fund",
+    "title": "ETF vs mutual fund",
+    "category": "General Education",
+    "content": "An ETF, or exchange traded fund, trades on the stock exchange like a share and usually needs a demat and trading account. Its price can move during market hours. A mutual fund is bought or redeemed through the fund house or platform at the applicable NAV, usually calculated once per business day. ETFs can be useful for real-time exchange trading, while mutual funds can be simpler for SIPs and automatic investing. Both carry market risk and returns are not guaranteed."
+  },
+  {
+    "id": "account_login_issue",
+    "title": "Account login issue",
+    "category": "Account",
+    "content": "Login issues can happen because of incorrect OTP, expired OTP, changed phone number, device change, app version issues, or temporary security locks. Users should update the app, verify network connectivity, request a fresh OTP, and make sure the registered phone number is active. If the account is locked, the phone number is no longer accessible, or the user suspects unauthorized access, escalate immediately to human support."
+  },
+  {
+    "id": "fo_risk_disclaimer",
+    "title": "F&O risk disclaimer",
+    "category": "Risk",
+    "content": "Futures and Options are leveraged products and can lead to rapid losses, including losses greater than the initial margin in some cases. F&O is not suitable for every investor and requires understanding of leverage, expiry, volatility, margin requirements, and risk management. Users should not invest all their money in F&O or expect guaranteed returns. Education and risk disclosure are important before trading derivatives."
+  },
+  {
+    "id": "general_investment_risk",
+    "title": "General investment risk disclaimer",
+    "category": "Risk",
+    "content": "All market-linked investments carry risk. Stock, ETF, mutual fund, and derivative values can rise or fall due to market conditions, company performance, interest rates, liquidity, and broader economic events. Past returns do not guarantee future returns. Investors should understand risk, diversify appropriately, and avoid decisions based only on short-term predictions or guaranteed-return claims. This information is educational and not financial advice."
+  }
+]

@@ -1,0 +1,6 @@
+asset_name,type,amount,risk_level
+NIFTY 50 ETF,ETF,20000,Low
+Small Cap Mutual Fund,Mutual Fund,30000,High
+Reliance Industries,Stock,15000,Medium
+Corporate Bond,Bond,10000,Low
+Gold ETF,ETF,8000,Medium

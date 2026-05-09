@@ -1,0 +1,8 @@
+streamlit
+openai
+chromadb
+pandas
+python-dotenv
+pydantic
+plotly
+numpy
