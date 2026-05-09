@@ -6,3 +6,4 @@ python-dotenv
 pydantic
 plotly
 numpy
+pysqlite3-binary; platform_system == "Linux"

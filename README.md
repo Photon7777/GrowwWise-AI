@@ -151,6 +151,34 @@ Open the local URL shown by Streamlit, usually:
 http://localhost:8501
 ```
 
+## Deploy On Streamlit Community Cloud
+
+This repo is organized for Streamlit Community Cloud:
+
+- Repository: `Photon7777/GrowwWise-AI`
+- Branch: `main`
+- Main file path: `app.py`
+- Dependencies: `requirements.txt`
+- Theme config: `.streamlit/config.toml`
+
+Deployment steps:
+
+1. Go to [share.streamlit.io](https://share.streamlit.io).
+2. Click **Create app**.
+3. Choose **Yup, I have an app**.
+4. Select repository `Photon7777/GrowwWise-AI`.
+5. Select branch `main`.
+6. Set main file path to `app.py`.
+7. Open **Advanced settings** and add this secret:
+
+```toml
+OPENAI_API_KEY = "your_new_openai_api_key_here"
+```
+
+8. Click **Deploy**.
+
+Do not commit `.env` or real API keys to GitHub. The app reads `OPENAI_API_KEY` from Streamlit Cloud secrets in production and from `.env` locally.
+
 ## Demo Queries
 
 Try these in **Ask Assistant**:

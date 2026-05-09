@@ -1,6 +1,14 @@
 from __future__ import annotations
 
+import sys
 from typing import Any
+
+try:
+    import pysqlite3
+
+    sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+except Exception:
+    pass
 
 import chromadb
 from chromadb.config import Settings

@@ -65,7 +65,7 @@ class OpenAIService:
         chat_model: str | None = None,
         embedding_model: str | None = None,
     ) -> None:
-        raw_api_key = os.getenv("OPENAI_API_KEY", "").strip()
+        raw_api_key = _get_secret("OPENAI_API_KEY")
         self.api_key = "" if raw_api_key == "your_openai_api_key_here" else raw_api_key
         self.chat_model = chat_model or DEFAULT_CHAT_MODEL
         self.embedding_model = embedding_model or DEFAULT_EMBEDDING_MODEL
@@ -158,3 +158,17 @@ class OpenAIService:
                 if text:
                     chunks.append(text)
         return "\n".join(chunks).strip()
+
+
+def _get_secret(name: str) -> str:
+    env_value = os.getenv(name, "").strip()
+    if env_value:
+        return env_value
+
+    try:
+        import streamlit as st
+
+        value = st.secrets.get(name, "")
+        return str(value).strip() if value else ""
+    except Exception:
+        return ""
