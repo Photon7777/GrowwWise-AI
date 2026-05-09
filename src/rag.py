@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import os
 import sys
 from typing import Any
+
+os.environ.setdefault("PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION", "python")
 
 try:
     import pysqlite3

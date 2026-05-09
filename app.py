@@ -1,6 +1,11 @@
 from __future__ import annotations
 
+import os
 from html import escape
+
+# Streamlit Cloud can install protobuf versions that are stricter than some
+# transitive generated proto files used by vector-store dependencies.
+os.environ.setdefault("PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION", "python")
 
 import pandas as pd
 import plotly.express as px
